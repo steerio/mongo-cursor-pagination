@@ -41,7 +41,7 @@ module.exports = async function(collection, params) {
 
   const cursorOrQuery = collection[findMethod]({ $and: [cursorQuery, params.query] }, params.fields)
     .sort($sort)
-    .limit(params.limit + 1) // Query one more element to see if there's another page.
+    .limit(params.limit + 1); // Query one more element to see if there's another page.
 
   // Support both MongoDB collections and Mongoose models.
   const results = await (cursorOrQuery.toArray ? cursorOrQuery.toArray() : cursorOrQuery);
