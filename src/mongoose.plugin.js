@@ -1,5 +1,5 @@
 const find = require('./find');
-const _ = require('underscore');
+const { extend } = require('lodash');
 
 /**
  * Mongoose plugin
@@ -20,9 +20,7 @@ module.exports = function (schema, options) {
       throw new Error('collection property not found');
     }
 
-    param = _.extend({}, param);
-        
-    return find(this, param);
+    return find( this, extend({}, param));
   };
 
   if (options && options.name) {

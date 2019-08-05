@@ -1,4 +1,4 @@
-const _ = require('underscore');
+const _ = require('lodash');
 const bsonUrlEncoding = require('./bsonUrlEncoding');
 const getPropertyViaDotNotation = require('./getPropertyViaDotNotation');
 const config = require('../config');

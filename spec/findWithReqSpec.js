@@ -1,5 +1,5 @@
 const { describe } = require('ava-spec');
-const _ = require('underscore');
+const _ = require('lodash');
 const test = require('ava');
 var paging = require('../');
 var dbUtils = require('./support/db');

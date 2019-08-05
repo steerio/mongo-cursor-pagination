@@ -1,4 +1,4 @@
-var _ = require('underscore');
+var _ = require('lodash');
 var config = require('./config');
 var bsonUrlEncoding = require('./utils/bsonUrlEncoding');
 

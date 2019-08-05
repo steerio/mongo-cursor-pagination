@@ -40,8 +40,7 @@
     "lodash": "^4.17.15",
     "mongodb-extended-json": "^1.7.1",
     "projection-utils": "^1.1.0",
-    "semver": "^5.4.1",
-    "underscore": "^1.8.3"
+    "semver": "^5.4.1"
   },
   "devDependencies": {
     "ava": "^0.22.0",
@@ -59,7 +58,7 @@
     "mongoose": "5.0.15"
   },
   "engines": {
-    "node": ">= 6.9.1"
+    "node": ">= 8.3.0"
   },
   "ava": {
     "require": [

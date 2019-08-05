@@ -1,4 +1,4 @@
-const _ = require('underscore');
+const _ = require('lodash');
 const sanitizeParams = require('./utils/sanitizeParams');
 const { prepareResponse, generateSort, generateCursorQuery } = require('./utils/query');
 
